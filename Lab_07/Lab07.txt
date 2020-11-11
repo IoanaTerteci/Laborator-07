@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: yellow;
+}
+
+h1 {
+  color: Blue;
+  text-align: center;
+}
+
+p {
+  font-family: Times New Roman;
+  font-size: 30px;
+}
+</style>
+<script>
+function veziViitor()
+	{
+	document.getElementById("numeProfil").innerHTML = "Ing. Ioana Terteci-Popescu";
+	document.getElementById("pozaProfil").src = "Terteci2.jpg";
+	document.body.style.backgroundColor = "Red";
+	
+	var par = document.getElementsByTsgName("p");
+	var i;
+	for (i=0; i<par.lenght; i++) {
+		par [i].style.color = "green";
+		}
+	document.getElementById("pozaProfil").style.opacity="0.9";
+	document.getElementById("pozaProfil").style.border = "6px";
+	}
+function arataVarsta()
+	{
+	var azi = new Date;
+	var varstaMea;
+	var anNasc = document.getElementById("varsta").innerHTML;
+	var anCurent = azi.getFullYear();
+	varstMea = anCurent - parseInt(anNasc);
+	document.getElementById("varsta").innerHTML = varstMea;
+	}
+	
+</script>
+</head>
+
+
+<body>
+
+<h1>Laborator</h1>
+<p>Prezentare</p>
+<img src ="Terteci-Popescu.jpeg"  height="200" border-radius: 8px; />
+<div> <p>Nume: Terteci-Popescu Ioana</p>
+<p>e-mail: ioana_terteci@yahoo.com</p>
+<p>Numar de telefon: 0757xxxxxx</p>
+<button onclick="veziViitor()">Alta viata</button>
+<h2>Materii preferate</h2>
+<table>
+<tbody>
+<tr>
+<td>Fizica</td>
+<td>_</td>
+<td>Informatica aplicata</td>
+<td>_</td>
+<td>Programarea calculatoarelor</td>
+<td>_</td>
+</tr>
+<tr>_</tr>
+<tr>_</tr>
+</tbody>
+</table>
+<h2 class"sectiuni">hobby</h2>
+<ul>
+<li>Fotografia</li>
+<li>Baschetul</li>
+</ul>
+</div>
+</body>
+</html>
